@@ -95,7 +95,7 @@ generated keys are returned (as a map)." }
       (.setProperty p (as-str identity k) (as-str identity v)))
     p))
 
-(def ^{:private true :dynamic true} *db* {:connection nil :level 0})
+(def ^{:dynamic true} *db* {:connection nil :level 0})
 
 (def ^{:private true :doc "Map of classnames to subprotocols"} classnames
   {"postgresql"     "org.postgresql.Driver"
